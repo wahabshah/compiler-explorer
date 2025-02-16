@@ -10,5 +10,6 @@ if [ -n "${REMOTE_CONTAINERS}" ] || [ -n "${CODESPACES}" ]; then
     # perform additional one-time setup just after
     # the devcontainer is created
     npm install --prefix "${workspace_root}" # install node dependencies
+    make
 
 fi
